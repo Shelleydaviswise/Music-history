@@ -1,0 +1,50 @@
+.container {
+  background-color: lightgrey;
+  border: 2px solid black;
+  font-family: Arial, sans-serif;
+  width: 800px;
+  height: 700px;
+}
+
+
+.main-nav {
+  width: 750px;
+  margin: 30px auto 10px auto;
+  padding: 10px;
+  background-color: #FFB4B0;
+  border: 2px solid black;
+}
+
+nav > ul > li {
+  text-decoration: none;
+  display: inline;
+}
+
+.blue-box {
+  max-width: 30%;
+  height: 545px;
+  margin: 15px 2.5% 0 2.5%;
+  padding: 10px;
+  background-color: #4DD7FA;
+  border: 2px solid black;
+  float: left;
+  clear: left;
+  display: inline-block;
+}
+
+input [type="datalist"]
+
+.yellow-box {
+  max-width: 60%;
+  height: 545px;
+  background-color: #FEFAC0;
+  margin: 15px 2.5% 0 2.5%;
+  padding: 10px;
+  border: 2px solid black;
+  color: #785616;
+  display: inline-block;
+}
+
+fieldset {
+  border: none;
+}
