@@ -8,8 +8,8 @@
 </head>
 
 <body>
- <div class="container">
-  <div>
+  <!--Wrapper used to constrain blue and yellow boxes - tried div="main-div" to hold the boxes but I can't quite get it.  -->
+<div class="wrapper">
     <nav class="main-nav">
       <ul>
         <li>
@@ -23,75 +23,82 @@
         </li>
       </ul>
     </nav>
-  </div>
-  <section class="blue-box">
-    <form>
-      <fieldset>
-        <h3>Song Length</h3>
-        <input type="range" name="length" min="2.5" max="10">
+  <!-- <div class="main-div"> -->
+    <section class="blue-box">
+      <form>
+          <label>Song Length</label>
+          <input type="range" name="length" min="2.5" max="10">
+          <br>
+          <br>
+          <label for="artist-name">Artist: </label>
+          <select class="select-box">
+            <option>Queen</option>
+            <option>Lyle Lovett</option>
+            <option>Van Morrison</option>
+            <option>Laura Love</option>
+            <option>Joni Mitchell</option>
+          </select>
+          <br>
+          <br>
+          <label for="album-name">Album Name:</label>
+          <select class="select-box">
+            <option>Night at the Opera</option>
+            <option>News of the World</option>
+            <option>Van Morrison</option>
+            <option>Laura Love</option>
+            <option>Joni Mitchell</option>
+          </select>
+      <form>
         <br>
         <br>
-        <label for="artist-name">Artist: </label>
-        <br>
-        <label for="artist-name"</label>
-      <select id="loan-type" name="loan-type">
-        <option>Queen</option>
-        <option>Lyle Lovett</option>
-        <option>Van Morrison</option>
-        <option>Laura Love</option>
-        <option>Joni Mitchell</option>
-      </select>
-        
-      </fieldset>
-      <br>
-      <br>
-      <fieldset>
-        <label for="album-name">Album Name: </label>
-        <br>
-        <select name="album-name" list="album-name" placeholder="Options">
-          <option >Queen</option>
-          <option >Lyle Lovett</option>
-          <option >Van Morrison</option>
-          <option>Laura Love</option>
-          <option >Joni Mitchell</option>
-        </select>
-      </fieldset>
-      <br>
-      <br>
-      <h3>Genre</h3>
-      <fieldset>
-        <input type="checkbox" name="rock" value="rock-song"> Rock
-        <br>
-        <input type="checkbox" name="pop" value="pop-song"> Pop
-        <br>
-        <input type="checkbox" name="blues" value="blues-song"> Blues
-        <br>
-        <input type="checkbox" name="classical" value="classical-music"> Classical
-        <input type="checkbox" name="jazz" value="jazz-song"> Jazz
-        <input type="checkbox" name="hip-hop" value="hip-hop"> Hip-Hop
-        <br>
-        <br>
-        <input type="button" value="Filter" </fieldset>
-    </form>
-  </section>
-  <section class="yellow-box">
-    <h2>Song Name</h2>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-  </section>
+        <label>Genre:</label>
+        <table>
+          <tr>
+            <td><input type="checkbox" name="rock" value="rock-song"> Rock</td>
+            <td><input type="checkbox" name="classical" value="classical-music"> Classical</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="pop" value="pop-song"> Pop</td>
+            <td><input type="checkbox" name="jazz" value="jazz-music"> Jazz</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="blues" value="blues-song"> Blues</td>
+            <td><input type="checkbox" name="hip-hop" value="hip-hop"> Classical</td>
+           </table>
+          <br>
+          <input class="button" type="button" value="Filter" </fieldset>
+      </form>
+    </section>
+    <section class="yellow-box">
+      <h2>Song Name</h2>
+      <ul>
+        <li>Artist Name</li>
+        <li>Album Name</li>
+        <li>Genre</li>
+      </ul>
+      <h2>Song Name</h2>
+      <ul>
+        <li>Artist Name</li>
+        <li>Album Name</li>
+        <li>Genre</li>
+      </ul><h2>Song Name</h2>
+      <ul>
+        <li>Artist Name</li>
+        <li>Album Name</li>
+        <li>Genre</li>
+      </ul><h2>Song Name</h2>
+      <ul>
+        <li>Artist Name</li>
+        <li>Album Name</li>
+        <li>Genre</li>
+      </ul><h2>Song Name</h2>
+      <ul>
+        <li>Artist Name</li>
+        <li>Album Name</li>
+        <li>Genre</li>
+      </ul>
+    </section>
+  <!-- </div> -->
 </div>
-
 </body>
 </html>

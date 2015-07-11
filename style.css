@@ -1,50 +1,100 @@
-.container {
-  background-color: lightgrey;
-  border: 2px solid black;
+
+
+/*********
+GENERAL
+*********/
+
+.wrapper {
+  background-color: lightcyan;
+  max-width: 95%;
+  margin: 0 auto;
   font-family: Arial, sans-serif;
-  width: 800px;
-  height: 700px;
 }
 
-
+/*********
+NAVIGATION
+**********/
 .main-nav {
-  width: 750px;
-  margin: 30px auto 10px auto;
+  width: 97%;
+  margin: 3% auto;
   padding: 10px;
   background-color: #FFB4B0;
   border: 2px solid black;
 }
 
-nav > ul > li {
+li {
   text-decoration: none;
   display: inline;
+  color: black;
+}
+
+.main-div {
+  border: 2px solid black;
+  max-width: 100%
+}
+
+form {
+  margin: 5px;
+  padding: 5px;
+}
+
+label {
+  font-size: .90em;
+  display: block;
+  padding: 5px;
 }
 
 .blue-box {
-  max-width: 30%;
-  height: 545px;
-  margin: 15px 2.5% 0 2.5%;
-  padding: 10px;
+  width: 27%;
+ /* min-width: 200px;*/
+  padding: 7px;
   background-color: #4DD7FA;
   border: 2px solid black;
   float: left;
   clear: left;
   display: inline-block;
+  margin: 0 3% 0 0;
 }
 
-input [type="datalist"]
+tr {
+  align: center;
+}
+
+td {
+  font-size: .90em;
+  width: 50%;
+}
+
+.select-box {
+  border: 2px solid black;
+  font-size: .85em;
+  width: 80%;
+}
+
+.check-box {
+
+}
+
+.button {
+  font-size: 1em;
+  padding: 3px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 6px;
+  width: 50%;
+
+}
 
 .yellow-box {
-  max-width: 60%;
-  height: 545px;
+  width: 60%;
   background-color: #FEFAC0;
-  margin: 15px 2.5% 0 2.5%;
+  margin: 0 0 0 1.5%;
   padding: 10px;
   border: 2px solid black;
   color: #785616;
   display: inline-block;
 }
 
-fieldset {
-  border: none;
+h2 {
+  margin-left: 1.5em;
 }
