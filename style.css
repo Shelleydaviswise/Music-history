@@ -3,22 +3,33 @@
 /*********
 GENERAL
 *********/
-
-.wrapper {
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  margin: 5px, 0 auto 10px;
+  padding: 0;
   background-color: lightcyan;
-  max-width: 95%;
-  margin: 0 auto;
-  font-family: Arial, sans-serif;
+  /*display:-ms-flexbox;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;*/
 }
+
+/*.wrapper {
+  background-color: lightcyan;
+  max-width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}*/
 
 /*********
 NAVIGATION
 **********/
 .main-nav {
-  width: 97%;
-  margin: 3% auto;
-  padding: 10px;
   background-color: #FFB4B0;
+  width: 97%;
+  margin: 10px auto;
+  padding: 10px;
   border: 2px solid black;
 }
 
@@ -28,32 +39,41 @@ li {
   color: black;
 }
 
-.main-div {
-  border: 2px solid black;
+/*.main-div {
+  border: 1px solid black;
   max-width: 100%
+}*/
+
+.flexbox {
+  border: 1px solid black;
+  display:-ms-flexbox;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
 }
 
 form {
   margin: 5px;
   padding: 5px;
+  font-size: .90em;
 }
 
 label {
-  font-size: .90em;
   display: block;
+  margin: 2px 0 2px 0;
   padding: 5px;
 }
 
 .blue-box {
-  width: 27%;
- /* min-width: 200px;*/
-  padding: 7px;
   background-color: #4DD7FA;
   border: 2px solid black;
+  width: 30%;
+  min-width: 200px;
+  padding: 10px 0 12px 10px;
   float: left;
   clear: left;
   display: inline-block;
-  margin: 0 3% 0 0;
+
 }
 
 tr {
@@ -68,12 +88,10 @@ td {
 .select-box {
   border: 2px solid black;
   font-size: .85em;
-  width: 80%;
+  /*width: 80%;*/
+  min-width: 80%;
 }
 
-.check-box {
-
-}
 
 .button {
   font-size: 1em;
@@ -81,14 +99,17 @@ td {
   border: 2px solid black;
   background-color: white;
   border-radius: 6px;
-  width: 50%;
+  min-width: 80%;
 
 }
 
 .yellow-box {
   width: 60%;
+  min-width: 372px;
   background-color: #FEFAC0;
-  margin: 0 0 0 1.5%;
+  float: right;
+  clear: right;
+  margin-left: 5%;
   padding: 10px;
   border: 2px solid black;
   color: #785616;

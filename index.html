@@ -1,52 +1,52 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8">
+  <!-- Added for viewing on multiple devices/ media query -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Nashville Software School</title>
 </head>
-
 <body>
-  <!--Wrapper used to constrain blue and yellow boxes - tried div="main-div" to hold the boxes but I can't quite get it.  -->
-<div class="wrapper">
+<!-- <div class="wrapper"> -->
+  <!-- Header Navigation elements -->
+  <header>
     <nav class="main-nav">
       <ul>
-        <li>
-          View Music
-        </li>
-        <li>
-          | <a href="#">Add Music</a>
-        </li>
-        <li>
-          | <a href="#">Profile</a>
-        </li>
+        <li>View Music</li>
+        <li>| <a href="#">Add Music</a></li>
+        <li>| <a href="#">Profile</a></li>
       </ul>
     </nav>
-  <!-- <div class="main-div"> -->
+  </header>
+
+  <div class="flexbox">
+
+  <!-- Blue box -->
     <section class="blue-box">
       <form>
-          <label>Song Length</label>
-          <input type="range" name="length" min="2.5" max="10">
+          <label>Song Length:</label>
+          <input type="range" name="length" min="0" max="10" value="7.5">
           <br>
           <br>
           <label for="artist-name">Artist: </label>
-          <select class="select-box">
-            <option>Queen</option>
-            <option>Lyle Lovett</option>
-            <option>Van Morrison</option>
-            <option>Laura Love</option>
-            <option>Joni Mitchell</option>
+          <select class="select-box" name="artist">
+            <option value="queen">Queen</option>
+            <option value="lyllov">Lyle Lovett</option>
+            <option value="vanmor">Van Morrison</option>
+            <option value="laurlov">Laura Love</option>
+            <option value="jonimitch">Joni Mitchell</option>
           </select>
+             
           <br>
           <br>
           <label for="album-name">Album Name:</label>
           <select class="select-box">
-            <option>Night at the Opera</option>
-            <option>News of the World</option>
-            <option>Van Morrison</option>
-            <option>Laura Love</option>
-            <option>Joni Mitchell</option>
+            <option value=sha>Sheer Heart Attack</option>
+            <option>Road to Ensenada</option>
+            <option>Too Long in Exile</option>
+            <option>Octoroon</option>
+            <option>Court and Spark</option>
           </select>
       <form>
         <br>
@@ -63,42 +63,45 @@
           </tr>
           <tr>
             <td><input type="checkbox" name="blues" value="blues-song"> Blues</td>
-            <td><input type="checkbox" name="hip-hop" value="hip-hop"> Classical</td>
+            <td><input type="checkbox" name="hip-hop" value="hip-hop"> Hip-Hop</td>
            </table>
           <br>
           <input class="button" type="button" value="Filter" </fieldset>
       </form>
     </section>
     <section class="yellow-box">
-      <h2>Song Name</h2>
+      <h2>Killer Queen</h2>
       <ul>
-        <li>Artist Name</li>
-        <li>Album Name</li>
-        <li>Genre</li>
+         <li>Queen  |</li>
+        <li>Sheer Heart Attack |</li>
+        <li>Rock</li>
       </ul>
-      <h2>Song Name</h2>
+      <h2>Fiona</h2>
       <ul>
-        <li>Artist Name</li>
-        <li>Album Name</li>
-        <li>Genre</li>
-      </ul><h2>Song Name</h2>
+        <li>Lyle Lovett  |</li>
+        <li>Road to Ensenada  |</li>
+        <li>Country</li>
+      </ul>
+      <h2>Till We Get the Healing Done</h2>
       <ul>
-        <li>Artist Name</li>
-        <li>Album Name</li>
-        <li>Genre</li>
-      </ul><h2>Song Name</h2>
+         <li>Van Morrison  |</li>
+        <li>Too Long in Exile  |</li>
+        <li>R&B</li>
+      </ul>
+      <h2>Capricorn & Hominy</h2>
       <ul>
-        <li>Artist Name</li>
-        <li>Album Name</li>
-        <li>Genre</li>
-      </ul><h2>Song Name</h2>
+         <li>Laura Love  |</li>
+        <li>Octoroon  |</li>
+        <li>Folk, Afro-Celtic</li>
+      </ul>
+      <h2>Help Me</h2>
       <ul>
-        <li>Artist Name</li>
-        <li>Album Name</li>
-        <li>Genre</li>
+        <li>Joni Mitchell  |</li>
+        <li>Court and Spark  |</li>
+        <li>Folk</li>
       </ul>
     </section>
-  <!-- </div> -->
+  </div>
 </div>
 </body>
 </html>
