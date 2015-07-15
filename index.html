@@ -8,10 +8,9 @@
   <title>Nashville Software School</title>
 </head>
 <body>
-<!-- <div class="wrapper"> -->
-  <!-- Header Navigation elements -->
-  <header>
-    <nav class="main-nav">
+<div class="flex-container">
+  <header class="flex-header">
+    <nav>
       <ul>
         <li>View Music</li>
         <li>| <a href="#">Add Music</a></li>
@@ -19,58 +18,57 @@
       </ul>
     </nav>
   </header>
-
-  <div class="flexbox">
-
-  <!-- Blue box -->
-    <section class="blue-box">
-      <form>
-          <label>Song Length:</label>
-          <input type="range" name="length" min="0" max="10" value="7.5">
-          <br>
-          <br>
-          <label for="artist-name">Artist: </label>
-          <select class="select-box" name="artist">
-            <option value="queen">Queen</option>
-            <option value="lyllov">Lyle Lovett</option>
-            <option value="vanmor">Van Morrison</option>
-            <option value="laurlov">Laura Love</option>
-            <option value="jonimitch">Joni Mitchell</option>
-          </select>
-             
-          <br>
-          <br>
-          <label for="album-name">Album Name:</label>
-          <select class="select-box">
-            <option value=sha>Sheer Heart Attack</option>
-            <option>Road to Ensenada</option>
-            <option>Too Long in Exile</option>
-            <option>Octoroon</option>
-            <option>Court and Spark</option>
-          </select>
-      <form>
+  
+  <section class="flex-item main">
+    <form>
+      <label>Song Length:</label>
+      <input type="range" name="length" min="0" max="10" value="7.5">
+      <br>
+      <br>
+      <label for="artist-name">Artist: </label>
+      <select class="select-box" name="artist">
+        <option value="queen">Queen</option>
+        <option value="lyllov">Lyle Lovett</option>
+        <option value="vanmor">Van Morrison</option>
+        <option value="laurlov">Laura Love</option>
+        <option value="jonimitch">Joni Mitchell</option>
+      </select>
+      <br>
+      <br>
+      <label for="album-name">Album Name:</label>
+      <select class="select-box">
+        <option value=sha>Sheer Heart Attack</option>
+        <option>Road to Ensenada</option>
+        <option>Too Long in Exile</option>
+        <option>Octoroon</option>
+        <option>Court and Spark</option>
+      </select>
+    </form>
+    <br>
+    <br>
+    <form>  
+      <label>Genre:</label>
+      <table>
+        <tr>
+          <td><input type="checkbox" name="rock" value="rock-song"> Rock</td>
+          <td><input type="checkbox" name="classical" value="classical-music"> Classical</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="pop" value="pop-song"> Pop</td>
+          <td><input type="checkbox" name="jazz" value="jazz-music"> Jazz</td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="blues" value="blues-song"> Blues</td>
+          <td><input type="checkbox" name="hip-hop" value="hip-hop"> Hip-Hop</td>
+         </table>
         <br>
-        <br>
-        <label>Genre:</label>
-        <table>
-          <tr>
-            <td><input type="checkbox" name="rock" value="rock-song"> Rock</td>
-            <td><input type="checkbox" name="classical" value="classical-music"> Classical</td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" name="pop" value="pop-song"> Pop</td>
-            <td><input type="checkbox" name="jazz" value="jazz-music"> Jazz</td>
-          </tr>
-          <tr>
-            <td><input type="checkbox" name="blues" value="blues-song"> Blues</td>
-            <td><input type="checkbox" name="hip-hop" value="hip-hop"> Hip-Hop</td>
-           </table>
-          <br>
-          <input class="button" type="button" value="Filter" </fieldset>
-      </form>
-    </section>
-    <section class="yellow-box">
-      <h2>Killer Queen</h2>
+        <input class="button" type="button" value="Filter">
+    </form>
+  </section>
+  <section class="empty">
+  </section>
+  <section class="flex-item sidebar__right">
+    <h2>Killer Queen</h2>
       <ul>
          <li>Queen  |</li>
         <li>Sheer Heart Attack |</li>
@@ -99,9 +97,8 @@
         <li>Joni Mitchell  |</li>
         <li>Court and Spark  |</li>
         <li>Folk</li>
-      </ul>
-    </section>
-  </div>
+      </ul></section>
+  <footer class="flex-item">copyright 2015</footer>
 </div>
 </body>
 </html>

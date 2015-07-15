@@ -1,55 +1,43 @@
-
-
-/*********
-GENERAL
-*********/
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1em;
-  margin: 5px, 0 auto 10px;
-  padding: 0;
-  background-color: lightcyan;
-  /*display:-ms-flexbox;
-  display:-webkit-box;
-  display:-webkit-flex;
-  display:flex;*/
+font-family: Arial, sans-serif;
+font-size: 1em;
 }
 
-/*.wrapper {
-  background-color: lightcyan;
-  max-width: 100%;
+.flex-container {
   padding: 0;
-  margin: 0 auto;
-}*/
-
-/*********
-NAVIGATION
-**********/
-.main-nav {
-  background-color: #FFB4B0;
-  width: 97%;
-  margin: 10px auto;
-  padding: 10px;
-  border: 2px solid black;
+  margin: 0;
+  list-style: none;
+  height: 200px;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-li {
+ul li {
+  font-size: .85em;
   text-decoration: none;
   display: inline;
   color: black;
 }
 
-/*.main-div {
+.flex-container > header, 
+.flex-container > footer { 
+  flex: 1 100%; 
+  background-color: #FFB4B0;
+  margin: 5px auto;
+  padding: 2px;
   border: 1px solid black;
-  max-width: 100%
-}*/
+  display: flex;
+}
 
-.flexbox {
-  border: 1px solid black;
-  display:-ms-flexbox;
-  display:-webkit-box;
-  display:-webkit-flex;
-  display:flex;
+/***********
+Blue Box
+***********/
+.main {
+  flex-grow: 1;
+  background-color: #4DD7FA;
+  border: 2px solid black;
+  padding: 10px 0 12px 10px;
+  display: inline-block;
 }
 
 form {
@@ -64,20 +52,9 @@ label {
   padding: 5px;
 }
 
-.blue-box {
-  background-color: #4DD7FA;
-  border: 2px solid black;
-  width: 30%;
-  min-width: 200px;
-  padding: 10px 0 12px 10px;
-  float: left;
-  clear: left;
-  display: inline-block;
-
-}
-
 tr {
   align: center;
+
 }
 
 td {
@@ -88,10 +65,8 @@ td {
 .select-box {
   border: 2px solid black;
   font-size: .85em;
-  /*width: 80%;*/
-  min-width: 80%;
+  width: 80%;
 }
-
 
 .button {
   font-size: 1em;
@@ -100,22 +75,30 @@ td {
   background-color: white;
   border-radius: 6px;
   min-width: 80%;
-
 }
 
-.yellow-box {
-  width: 60%;
-  min-width: 372px;
+.empty { 
+  width: 7px;
+  display: inline-block;
+}
+
+.sidebar__right { 
+  flex-grow: 3; 
   background-color: #FEFAC0;
-  float: right;
-  clear: right;
-  margin-left: 5%;
   padding: 10px;
   border: 2px solid black;
   color: #785616;
   display: inline-block;
 }
 
+
 h2 {
   margin-left: 1.5em;
+}
+
+.flex-item {  
+  padding: 10px;
+  width: 100px;
+  border: 3px solid rgba(0,0,0,.2);
+  text-align: left;
 }
