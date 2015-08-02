@@ -1,104 +1,135 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8">
+
   <!-- Added for viewing on multiple devices/ media query -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Nashville Software School</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="musicHistory4.css" >
+  
+  <title>Music History 4 Project</title>
+  
 </head>
+
+
 <body>
-<div class="flex-container">
-  <header class="flex-header">
+
+
+<!-- HEADER AND NAVIGATION ELEMENTS -->
+ 
+  <header>
     <nav>
-      <ul>
-        <li>View Music</li>
-        <li>| <a href="#">Add Music</a></li>
-        <li>| <a href="#">Profile</a></li>
+      <ul class="navigation">
+        <li class="selected"><a href="#">View Music</li>
+        <li>|</li>
+        <li><a href="#">Add Music</a></li>
+         <li>|</li>
+        <li><a href="#">Profile</a></li>
       </ul>
     </nav>
   </header>
-  
-  <section class="flex-item main">
-    <form>
-      <label>Song Length:</label>
-      <input type="range" name="length" min="0" max="10" value="7.5">
-      <br>
-      <br>
-      <label for="artist-name">Artist: </label>
-      <select class="select-box" name="artist">
-        <option value="queen">Queen</option>
-        <option value="lyllov">Lyle Lovett</option>
-        <option value="vanmor">Van Morrison</option>
-        <option value="laurlov">Laura Love</option>
-        <option value="jonimitch">Joni Mitchell</option>
-      </select>
-      <br>
-      <br>
-      <label for="album-name">Album Name:</label>
-      <select class="select-box">
-        <option value=sha>Sheer Heart Attack</option>
-        <option>Road to Ensenada</option>
-        <option>Too Long in Exile</option>
-        <option>Octoroon</option>
-        <option>Court and Spark</option>
-      </select>
-    </form>
-    <br>
-    <br>
-    <form>  
-      <label>Genre:</label>
-      <table>
-        <tr>
-          <td><input type="checkbox" name="rock" value="rock-song"> Rock</td>
-          <td><input type="checkbox" name="classical" value="classical-music"> Classical</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="pop" value="pop-song"> Pop</td>
-          <td><input type="checkbox" name="jazz" value="jazz-music"> Jazz</td>
-        </tr>
-        <tr>
-          <td><input type="checkbox" name="blues" value="blues-song"> Blues</td>
-          <td><input type="checkbox" name="hip-hop" value="hip-hop"> Hip-Hop</td>
-         </table>
-        <br>
-        <input class="button" type="button" value="Filter">
-    </form>
-  </section>
-  <section class="empty">
-  </section>
-  <section class="flex-item sidebar__right">
-    <h2>Killer Queen</h2>
-      <ul>
-         <li>Queen  |</li>
-        <li>Sheer Heart Attack |</li>
-        <li>Rock</li>
-      </ul>
+
+<!-- MAIN CONTENT -->
+
+<div id="parent-flex">
+
+<!-- LEFT FLEX CONTAINER -->
+    <div class="left-flex">
+
+       
+      <div id="formElements">
+        <form>
+            <label>Song Length:</label>
+            <input type="range" name="length" min="0" max="10" value="7.5">
+            
+  <!-- ARTIST SELECT BOX -->
+
+            <label for="artist-name">Artist: </label>
+              <select class="select-box" name="artist">
+                <option value="queen">Queen</option>
+                <option value="lyllov">Lyle Lovett</option>
+                <option value="vanmor">Van Morrison</option>
+                <option value="laurlov">Laura Love</option>
+                <option value="jonimitch">Joni Mitchell</option>
+              </select>
+          
+  <!-- ALBUM SELECT BOX -->
+
+            <label for="album-name">Album Name:</label>
+              <select class="select-box">
+                <option value=sha>Sheer Heart Attack</option>
+                <option>Road to Ensenada</option>
+                <option>Too Long in Exile</option>
+                <option>Octoroon</option>
+                <option>Court and Spark</option>
+              </select>
+        </form>
+
+
+  <!--  CHECKBOX ITEMS  -->
+        <form>
+          <label for="genre">Genre:</label>
+          <table>
+            <tr>
+              <td><input type="checkbox" name="rock" value="rock"> Rock</td>
+              <td><input type="checkbox" name="classical" value="classical"> Classical</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="pop" value="pop"> Pop</td>
+              <td><input type="checkbox" name="jazz" value="jazz"> Jazz</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="blues" value="blues"> Blues</td>
+              <td><input type="checkbox" name="hip-hop" value="hip-hop"> Hip-Hop</td>
+          </table>
+        </form>
+         <input class="button" type="button" value="Filter">
+      </div>  
+     
+    </div>
+
+<!-- RIGHT FLEX CONTAINER -->
+
+    <section id="right-flex" class="aside" >
+      <!-- <div>
+      <h2>Killer Queen</h2>
+      <p>Queen  |  Sheer Heart Attack  |  Rock</p>
+      </div>
+
+      <div>
       <h2>Fiona</h2>
-      <ul>
-        <li>Lyle Lovett  |</li>
-        <li>Road to Ensenada  |</li>
-        <li>Country</li>
-      </ul>
-      <h2>Till We Get the Healing Done</h2>
-      <ul>
-         <li>Van Morrison  |</li>
-        <li>Too Long in Exile  |</li>
-        <li>R&B</li>
-      </ul>
-      <h2>Capricorn & Hominy</h2>
-      <ul>
-         <li>Laura Love  |</li>
-        <li>Octoroon  |</li>
-        <li>Folk, Afro-Celtic</li>
-      </ul>
-      <h2>Help Me</h2>
-      <ul>
-        <li>Joni Mitchell  |</li>
-        <li>Court and Spark  |</li>
-        <li>Folk</li>
-      </ul></section>
-  <footer class="flex-item">copyright 2015</footer>
+      <p>Lyle Lovett |   Road to Ensenada |  Country</p>
+      </div>
+
+      <div>
+        <h2>Till We Get The Healing Done</h2>
+          <p>Van Morrison |  Too Long in Exile  |  R&B</p>
+      </div>
+
+      <div>
+        <h2>Capricorn & Hominy</h2>
+          <p>Laura Love  |  Octoroon  |  Folk, Afro-Celtic</p>
+      </div>
+
+      <div>
+        <h2>Help Me</h2>
+          <p>Joni Mitchell  |  Court and Spark  |  Folk</p>
+      </div>
+
+  -->
+      <div> <button id="more"> More </button>
+
+    </section>
+ 
+  <!-- <footer class="footer">Stuff should go here</footer>  -->
+
 </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script type="text/javascript" script src="main.js"></script>
 </body>
+
 </html>
